@@ -8,7 +8,8 @@ body {
 .container {
   width: 50%;
   margin: 2em auto;
-  border: 1px solid black;
+  border: 3px solid black;
+  border-radius: 20px;
 }
 /*-------- header--------------------------------- */
 header {
@@ -20,11 +21,11 @@ header {
 }
 
 .logo-img {
-  width: 15%;
+  width: 100px;
 }
 
 .user-img {
-  width: 40px;
+  width: 42px;
   height: auto;
   border-radius: 50%;
 }
@@ -33,17 +34,20 @@ header {
 
 .id {
   display: flex;
-  flex-direction: row;
+  align-items: center;
 }
 .id-name {
   font-weight: 900;
-  margin-top: 2em;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.id-location {
   margin-bottom: 0;
 }
 .vangogh-avatar-img {
-  width: 60px;
+  width: 40px;
   border-radius: 50%;
-  padding: 0.8em;
+  padding: 15px;
 }
 
 .id-location {
@@ -69,14 +73,19 @@ header {
   width: 20px;
   padding-right: 1em;
 }
+.heart-reaction:hover,
+.comment-reaction:hover,
+.dm-reaction:hover {
+  opacity: 0.5;
+}
 
 /* ---------------like-count section-------------------------- */
 .number-of-likes {
   margin-left: 1em;
-  font-weight: 700;
 }
 .likes {
   margin-bottom: 0;
+  font-weight: 700;
 }
 
 /* ----------caption section--------------------------- */
@@ -93,8 +102,10 @@ header {
 .caption-para {
   margin-top: 10px;
 }
+
+/* -----media queries--- */
 @media (max-width: 500px) {
-  .logo-img {
-    width: 80px;
+  .container {
+    width: 95%;
   }
 }
