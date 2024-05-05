@@ -1,4 +1,3 @@
-// AVOID CROSS SITE SCRIPTING ATTACKS
 const posts = [
   {
     name: "Vincent van Gogh",
@@ -29,6 +28,8 @@ const posts = [
     likes: 152,
   },
 ];
+
+// AVOID CROSS SITE SCRIPTING ATTACKS
 function escape(str) {
   const div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
